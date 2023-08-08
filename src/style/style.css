@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 8px;
+    position: relative;
+}
+
+li a::before{
+    transition: 350ms;
+    height: 5px;
+    width: 0%;
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: 0px;
+    left: 0;
+    border-radius: 9px;
+}
+
+li a:hover:before{
+    width: 100%;
+}
+
+.blackText{
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 400px){
+    li a{
+        padding: 5px;
+    }
+}
